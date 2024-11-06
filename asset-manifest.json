@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Dongflix/static/css/main.8cb39836.css",
-    "main.js": "/Dongflix/static/js/main.6ab3850a.js",
+    "main.js": "/Dongflix/static/js/main.8b488d1a.js",
     "static/js/453.1c29ee80.chunk.js": "/Dongflix/static/js/453.1c29ee80.chunk.js",
     "static/media/signin.png": "/Dongflix/static/media/signin.d9dab80fe4b0ef73656b.png",
     "index.html": "/Dongflix/index.html",
     "main.8cb39836.css.map": "/Dongflix/static/css/main.8cb39836.css.map",
-    "main.6ab3850a.js.map": "/Dongflix/static/js/main.6ab3850a.js.map",
+    "main.8b488d1a.js.map": "/Dongflix/static/js/main.8b488d1a.js.map",
     "453.1c29ee80.chunk.js.map": "/Dongflix/static/js/453.1c29ee80.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8cb39836.css",
-    "static/js/main.6ab3850a.js"
+    "static/js/main.8b488d1a.js"
   ]
 }
