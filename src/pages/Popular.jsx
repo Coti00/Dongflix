@@ -189,7 +189,7 @@ const Popular = () => {
             setLoading(true);
             const password = localStorage.getItem('password');
             let allMovies = [];
-
+    
             try {
                 for (let page = 1; page <= 20; page++) {
                     const response = await axios.get(`https://api.themoviedb.org/3/movie/popular?language=ko-KR&page=${page}`, {
@@ -198,7 +198,14 @@ const Popular = () => {
                             Authorization: `Bearer ${password}`
                         }
                     });
-                    allMovies = [...allMovies, ...response.data.results];
+                    const newMovies = response.data.results;
+    
+                    // 중복 제거 후 movies에 추가
+                    newMovies.forEach((movie) => {
+                        if (!allMovies.some(existingMovie => existingMovie.id === movie.id)) {
+                            allMovies.push(movie);
+                        }
+                    });
                 }
                 setMovies(allMovies);
                 setLoading(false);
